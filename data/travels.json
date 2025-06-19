@@ -49,10 +49,10 @@
   },
   {
     "ruta": "/islandia",
-    "lugar": "islandia",
+    "lugar": "Islandia",
     "nombre": "Islandia a tope",
-    "precio": 5000,
     "descripcion": "Chachipilongui",
+    "precio": 5000,
     "img": "https://images.unsplash.com/photo-1528837516156-0a7225a43641?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGljZWxhbmR8ZW58MHx8MHx8fDA%3D"
   }
 ]

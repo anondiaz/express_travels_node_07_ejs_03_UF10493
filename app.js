@@ -46,6 +46,7 @@ app.post('/insert', (req, res) => {
   // console.log(req.body); // Mostramos los datos del formulario en la consola
   const newTravel = req.body
   // console.log(newTravel); // Mostramos los datos del formulario en la consola
+  newTravel.ruta = "/" + newTravel.ruta // Añadimos la barra al inicio de la ruta
   newTravel.precio = parseFloat(newTravel.precio); // Convertimos el precio a un número
   jsonData.push(newTravel); // Añadimos el nuevo viaje al array
   console.log(jsonData); // Mostramos el array actualizado en la consola
