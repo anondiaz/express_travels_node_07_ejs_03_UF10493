@@ -1,0 +1,19 @@
+{
+  "name": "node_07_ejs_3",
+  "version": "1.0.0",
+  "description": "Aplicacion de agencia de viajes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "Andres",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
