@@ -54,5 +54,13 @@
     "descripcion": "Chachipilongui",
     "precio": 5000,
     "img": "https://images.unsplash.com/photo-1528837516156-0a7225a43641?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGljZWxhbmR8ZW58MHx8MHx8fDA%3D"
+  },
+  {
+    "ruta": "/irlanda",
+    "lugar": "Irlanda",
+    "nombre": "El destino verde",
+    "precio": 2050,
+    "descripcion": "Visita la costa atlantica y sus tabernas",
+    "img": "https://images.unsplash.com/photo-1530538095376-a4936b35b5f0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXJlbGFuZHxlbnwwfHwwfHx8MA%3D%3D"
   }
 ]
