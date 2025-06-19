@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <nav>
+        <ul>
+            <% travels.forEach(travel => { %>
+                <li>
+                    <a href="<%= travel.ruta %>"><%= travel.lugar %></a>
+                </li>
+            <% }) %>
+        </ul>
+    </nav>
+    <main>
+    <h1><%= h1 %></h1>
+</main>
+        <footer>
+        <div>
+            
+        </div>
+        <div>
+            <p>&copy; <%= new Date().getFullYear() %> Viajes Express</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+        <div>
+            <p>Desarrollado por anondiaz</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
