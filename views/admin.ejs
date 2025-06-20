@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/lapiz.png" type="image/x-icon">
     <title>Travels admin</title>
     <link rel="stylesheet" href="css/admin.css">
+    <script src="js/admin.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,6 +41,37 @@
                 </div>
             </form>
         </section>
+        <section id="update">
+            <h2>Edita el viaje</h2>
+            <form name="update">
+                <div>
+                    <input type="hidden" name="id_update" id="id_update">
+
+                    <label for="ruta_update">Ruta: (URL)</label>
+                    <input type="text" id="ruta_update" name="ruta_update" >
+                    
+                    <label for="lugar_update">Lugar:</label>
+                    <input type="text" id="lugar_update" name="lugar_update" >
+                    
+                    <label for="nombre_update">Nombre:</label>
+                    <input type="text" id="nombre_update" name="nombre_update" >
+                    
+                    <label for="precio_update">Precio:</label>
+                    <input type="number" id="precio_update" name="precio_update" >
+
+                    <label for="descripcion_update">Descripción:</label>
+                    <input id="descripcion_update" name="descripcion_update" ></input>
+                    
+                    <label for="img_update">Imagen URL:</label>
+                    <input type="url" id="img_update" name="img_update">
+                </div>
+                <div id="buttons">
+                    <button type="submit">Actualizar</button>
+                    <button type="reset">Borrar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </form>
+        </section>
         <section>
             <table>
                 <tr>
@@ -55,8 +88,8 @@
                         <td><%= travel.lugar %></td>
                         <td><%= travel.nombre %></td>
                         <td><%= travel.precio %></td>
-                        <td><a href=""><img src="icons/lapiz.png" alt="Edicion"></a></td>
-                        <td><a href=""><img src="icons/borrar.png" alt="Borrar"></a></td>
+                        <td><button onclick="editarDestino('<%= JSON.stringify(travel) %>')"><img src="icons/lapiz.png" alt="Edicion"></button></td>
+                        <td><button onclick="borrarDestino('<%= travel.id %>')"><img src="icons/borrar.png" alt="Borrar"></button></td>
                     </tr>
                 <% }); %>
                 <tr>
@@ -66,8 +99,8 @@
         </section>
 
     </main>
-    
+    <!-- <script>
 
-    
+    </script> -->
 </body>
 </html>
